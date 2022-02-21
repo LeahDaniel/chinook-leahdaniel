@@ -2,4 +2,4 @@
 
 SELECT c.firstName, c.lastName, c.customerId, c.country 
 FROM Customer c
-WHERE c.country IS "Brazil"
+WHERE c.country = "Brazil"

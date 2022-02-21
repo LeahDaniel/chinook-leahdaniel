@@ -7,5 +7,5 @@
 
 SELECT c.firstName, c.lastName, c.customerId, c.country 
 FROM Customer c
-WHERE c.country IS NOT "USA"
+WHERE c.country != "USA"
 

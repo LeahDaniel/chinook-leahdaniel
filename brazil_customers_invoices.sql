@@ -8,5 +8,5 @@
 SELECT c.firstName, c.lastName, i.invoiceId, i.invoiceDate, i.billingCountry
 FROM Customer c
 JOIN Invoice i ON i.customerId = c.customerId
-WHERE c.country IS "Brazil"
+WHERE c.country = "Brazil"
 
