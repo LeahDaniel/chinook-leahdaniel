@@ -4,4 +4,3 @@
 SELECT COUNT(*) total, invoiceId
 FROM InvoiceLine
 WHERE invoiceId = 37
-GROUP BY invoiceId
