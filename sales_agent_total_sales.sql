@@ -1,0 +1,10 @@
+-- Provide a query that shows total sales made by each sales agent. 
+-- The resultant table should include:
+-- Employee full name
+-- Total sales for each employee (all time)
+
+SELECT e.firstName, e.lastName, SUM(i.total) totalSales
+FROM Employee e 
+JOIN Customer c ON c.supportRepId = e.employeeId
+JOIN Invoice i ON i.customerId = c.customerId
+GROUP BY e.employeeId
