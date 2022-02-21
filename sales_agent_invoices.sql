@@ -7,4 +7,3 @@ SELECT i.invoiceId, e.firstName || " " || e.lastName AS fullName
 FROM Employee e 
 JOIN Customer c ON c.supportRepId = e.employeeId 
 JOIN Invoice i ON c.customerId = i.customerId
-WHERE e.title IS "Sales Support Agent"
